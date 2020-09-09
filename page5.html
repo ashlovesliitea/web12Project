@@ -1,0 +1,359 @@
+<html>
+    <head>
+        <meta charset="utf8mb4">
+        <title>page5.html</title>
+        <style>
+            .nav_all {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: #495057;
+                list-style-type: none;
+            }
+            .nav_ad {
+                padding: 15px;
+                padding-left: 30px;
+                position: relative;
+                left: 35%;
+            }
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: white;
+            }
+            a:hover {
+                color: tomato;
+            }
+            .main {
+                width: 50%;
+                margin: auto;
+                margin-top: 0%;
+            }
+            #title {
+                text-align: center;
+                background-image: url("이미지1.jfif");
+            }
+            #fm {
+                color: black;
+                text-align: right;
+                font-family: "Edwardian Script ITC";
+                font-size: 250%;
+            }
+            img {
+                padding-top: 5%;
+            }
+            h1,h5 {
+                text-align: center;
+            }
+            h5 {
+                color: #868e96;
+                margin-top: -1.3%;
+            }
+            .sub {
+                background-color: #343a40;
+                color: white;
+                padding-top: 0.01%;
+                padding-bottom: 0.01%;
+                border-radius: 20px;
+            }
+            #story:focus, #star:focus {
+                border-color: #5382b1;
+            }
+            #story {
+                border-top: none;
+                border-left: none;
+                border-right: none; 
+                border-bottom-style: 5px;
+                border-color: #e9ecef; 
+                margin-top: 5%;
+                white-space: nowrap;
+                background-color: white;
+                width: 50%;
+                height: 7%
+                
+            }
+            #star {
+                border-top: none;
+                border-left: none;
+                border-right: none; 
+                border-bottom-style: 5px;   
+                border-color: #e9ecef;        
+                margin-top: 5%;
+                white-space: nowrap;           
+                background-color: white;      
+                width: 50%;
+                height: 7%;
+                
+            }
+            #tp {
+                margin-top: -2.7%;
+            }
+            input:focus {
+                outline: none;
+            }
+            #more {
+                color: #868e96;
+                text-align: right;
+                border: none;
+                background-color: white;
+            }
+            #more:hover {
+                color: #495057;
+            }
+            #줄거리 {
+                position: relative;
+                top: 10px;
+            }
+            #감독, #배우 {
+                padding-top: 30px;
+                margin-bottom: -10px;
+            }
+            #포토 {
+                color: white;
+                background-color: #343a40;
+                position: relative;
+                top: -850px;
+                bottom: -1000px;
+                padding-top: 20px;
+                padding-bottom: 70px;
+                
+            }
+            #prev {
+                margin-left: 0px;
+                float: left;
+            }
+            #next {
+                margin-left: 0px;
+                float: right;
+            }
+            #prev, #next {
+                margin-top: -10%;               
+                background-color: rgba(0, 0, 0, 0);
+                font-size: 80px;
+                color: #f1f3f5;
+                border: 0;
+                outline: 0;
+                margin-top: -100px;
+                position: relative;
+                top: -200px;
+                
+            }
+            #prev:hover, #next:hover {
+                color: violet;
+            }
+            #num {
+                text-align: center;
+            }
+            #star_bord {
+                display: block;
+                background-color: #ced4da;
+                margin-top: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .star_main {
+                width: 100%;
+                margin: auto;
+                margin-top: 0%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <nav>
+                <ul class="nav_all">
+                    <li class="nav_ad"><a href="main.html">수호</a></li>
+                    <li class="nav_ad"><a href="page1.html">지율</a></li>
+                    <li class="nav_ad"><a href="page2.html">성현</a></li>
+                    <li class="nav_ad"><a href="page3.html">가은</a></li>
+                    <li class="nav_ad"><a href="page4.html">태근</a></li>
+                    <li class="nav_ad"><a href="page5.html">정욱</a></li>
+                </ul>
+            </nav>
+
+
+            <div id="title">
+                <img src="다운로드 1.jfif" width="10%" height="30%">
+                <div id="fm">"Live life as there were no second chance..."</div>
+            </div>
+
+            <div class="main">
+                <h1>어바웃 타임</h1>
+                <h5>2013.멜로.영국</h5>
+
+                <div class="sub">
+                    <p>&emsp;&emsp;&emsp;&emsp;관람객 평점&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;누적 관객수
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;러닝타임&nbsp;
+                    </p>
+
+                    <p id="tp">&ensp;&emsp;&emsp;&emsp;&emsp;&#x2B50;9.28
+                        &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3,441,657명
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;123분
+                    </p>                    
+                </div>
+
+                <div class="grid">
+                    <input id = "story" id = "story" type="button" value="주요 정보" onclick="
+                    document.getElementById('주요정보').style.display='block', document.getElementById('평점').style.display='none';"><input id = "star" id = "star" type="button" value="평점 및 관람평" onclick="
+                    document.getElementById('평점').style.display='block', document.getElementById('주요정보').style.display='none'";>
+                </div>
+
+
+                <div id="주요정보"> 
+                    <div id = "줄거리">
+                        <span style="font-size: 25px; font-weight: bold;">&ensp;# 줄거리&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                        <input id="more" type="button" value="펼쳐보기" onclick="
+                        if (this.value === '펼쳐보기') {
+                        document.getElementById('text2').style.display='block', document.getElementById('text1').style.display='none';
+                        this.value = '접어보기'}
+                        else {
+                        document.getElementById('text1').style.display='block', document.getElementById('text2').style.display='none';
+                        this.value = '펼쳐보기'}">
+                
+                        <p id="text1"> &nbsp;모태솔로 팀(돔놀 글리슨)은 성인이 된 날, 아버지(빌 나이)로부터 놀랄만한 가문의 비밀을 듣게 된다.<br>
+                            바로 시간을 되돌릴 수 있는 능력이 있다는 것!<br>
+                            그것이 비록 히틀러를 죽이거나 여신과 뜨거운 사랑을 할 수는 없지만,<br>
+                            여자친구는 만들어 줄 순 있으리..
+                        </p>
+                        <p id="text2" style="display: none">
+                            &nbsp;모태솔로 팀(돔놀 글리슨)은 성인이 된 날, 아버지(빌 나이)로부터 놀랄만한 가문의 비밀을 듣게 된다.<br>
+                            바로 시간을 되돌릴 수 있는 능력이 있다는 것!<br>
+                            그것이 비록 히틀러를 죽이거나 여신과 뜨거운 사랑을 할 수는 없지만,<br>
+                            여자친구는 만들어 줄 순 있으리..<br>
+                            꿈을 위해 런던으로 간 팀은 우연히 만난 사랑스러운 여인 메리에게 첫눈에 반하게 된다.<br>
+                            그녀의 사랑을 얻기 위해 자신의 특별한 능력을 마음껏 발휘하는 팀.<br>
+                            어설픈 대시, 어색한 웃음은 리와인드! 뜨거웠던 밤은 더욱 뜨겁게 리플레이!<br>
+                            꿈에 그리던 그녀와 매일매일 최고의 순간을 보낸다.<br>
+                            
+                            하지만 그와 그녀의 사랑이 완벽해질수록 팀을 둘러싼 주변 상황들은 미묘하게 엇갈리고,<br>
+                            예상치 못한 사건들이 여기저기 나타나기 시작하는데…<br>
+                            
+                            어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?
+                        </p>                     
+                    </div>
+
+                    <div style="border-top-style: dotted; position: relative; top: 25px; color: #ced4da;"></div>
+
+                    <div id= "인물">
+                        <h2 id="감독">&ensp;# 감독</h2>
+                        <img src="감독.jfif" width="15%" height="20%"> 
+                        <p style="position: relative; top: -158px; left: 120px;"><span style="font-weight: bold;">리차드 커터스</span>
+                            <br><span style="color: #868e96;">Richard Curtis</span>
+                            <br><br><span style="color: #495057; font-size: 15px;">예스터 데이,2019<br>맘마미아!2,2018</span>  
+                        </p> 
+
+                        <div style="border-top-style: dotted; position: relative; top: -85px; color: #ced4da;"></div>
+
+                        <div style="position: relative; top: -100px;">
+                            <h2 id="배우">&ensp;# 배우</h2>
+                            <img src = "도널.jfif" width="15%" height="20%"> 
+                            <p style="position: relative; top: -160px; left: 120px;"><span style="font-weight: bold;">도널 글리슨</span>
+                                <br><span style="color: #868e96;">Domhnall Gleeson</span>
+                                <br><span style="color: red;">주연</span>&nbsp;|&nbsp;<span style="color: #495057;">팀 역</span>
+                                <br><br><span style="color: #495057; font-size: 15px;">피터 레빗 2,2020<br>더 키친,2019</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            </p>
+                            <img src="레이첼.jfif" width="15%" height="20%" style="position: relative; top: -338px; left: 400px;"> 
+                            <p style="position: relative; top: -497px; left: 520px;"><span style="font-weight: bold;">레이첼 맥아담스</span> 
+                                <br><span style="color: #868e96;">Rachel McAdams</span>
+                                <br><span style="color: red;">주연</span>&nbsp;|&nbsp;<span style="color: #495057;">메리 역</span>
+                                <br><br><span style="color: #495057; font-size: 15px;">유로비전 송 콘테스트,2020<br>게임 나이트,2018</span>
+                            </p>
+                            <img src="빌.jfif" width="15%" height="20%" style="position: relative; top: -450px;"> 
+                            <p style="position: relative; top: -607px; left: 120px;"><span style="font-weight: bold;">빌 나이</span>
+                                <br><span style="color: #868e96;">Bill Nighy</span>
+                                <br><span style="color: red;">조연</span>&nbsp;|&nbsp;<span style="color: #495057;">팀의 아빠 역</span>
+                                <br><br><span style="color: #495057; font-size: 15px;">미나미타,2020<br>엠마,2020</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                            </p>
+                            <img src="린제이.jfif" width="15%" height="20%" style="position: relative; top: -785px; left: 400px;"> 
+                            <p style="position: relative; top: -943px; left: 520px;"><span style="font-weight: bold;">린제이 던칸</span>
+                                <br><span style="color: #868e96;">Lindsay Duncan</span>
+                                <br><span style="color: red;">조연</span>&nbsp;|&nbsp;<span style="color: #495057;">팀의 엄마 역</span>
+                                <br><br><span style="color: #495057; font-size: 15px;">블랙버드,2020<br>리틀 조,2020</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="border-top-style: dotted; width: 100%; position: relative; top: -995px; color: #ced4da;"></div>
+
+                    <div id="포토" style="position: relative; top: -950px;">
+                        <h2>&ensp;# 포스터 / 스틸컷</h2>
+                        <img id = "image" src="3.jpg" width="100%">            
+                        <script>
+                            var imgs = ["1.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg"];
+                            var i = 0;
+                            var img = document.querySelector("#image");
+                        </script>
+                        
+
+                            <input id = "prev" type="button" value="<" onclick="
+                            i -= 1;
+                            if (i < 0) {
+                            i = 3;}
+                            img.src=imgs[i]">
+
+                            <input id = "next" type="button" value=">" onclick="
+                            i += 1;
+                            if (i > 3) {
+                            i = 0;}
+                            img.src=imgs[i]">                
+                    </div>
+                </div>
+
+                <div id= "평점" style="display: none;">
+                    <div id="star_bord">
+                        <p id="num" style="font-size: 40px;">&#x2B50;&emsp;<span style="font-size: 50px; font-weight: bold; color: black;">8</span>&ensp;/&ensp;10</p> 
+                    </div>
+
+                    <div class="star_main">
+                    <div style="margin-bottom: -100px;">
+                        <p style="font-size: 50px;">&#x1F609</p> 
+                        <p style="font-size: 20px; position: relative; top: -110px; left: 70px;">&#x2B50; 9</p>
+                        <p style="font-size: 15px; position: relative; top: -130px; left: 76px; color: #868e96;">칵칵켁트(ocul**)</p>
+                        <h4 style="position: relative; top: -120px">가슴을 따뜻하게 해주는 정말 완전소중한 영화 ㅠ~ㅠ</h4>
+                    </div>
+
+                    <div style="margin-bottom: -100px;">
+                        <p style="font-size: 50px;">&#x1F632</p> 
+                        <p style="font-size: 20px; position: relative; top: -110px; left: 70px;">&#x2B50; 8</p>
+                        <p style="font-size: 15px; position: relative; top: -130px; left: 76px; color: #868e96;">네르피온(ssid**)</p>
+                        <h4 style="position: relative; top: -120px">하루 하루를 어떻케 살아야 되는지 느끼게 해주는 영화 !!</h4>
+                    </div>
+
+                    <div style="margin-bottom: -100px;">
+                        <p style="font-size: 50px;">&#x1F60A;</p> 
+                        <p style="font-size: 20px; position: relative; top: -110px; left: 70px;">&#x2B50; 7</p>
+                        <p style="font-size: 15px; position: relative; top: -130px; left: 76px; color: #868e96;">치츠케(tset**)</p>
+                        <h4 style="position: relative; top: -120px">인생이 바로 시간여행을하는것이다. 라는 독백과... 과연 나는 시간을되돌릴수있다면 언제로돌릴수있을까? 난 과연 현재에 충실히 살고있는것인가...란 화두를 던져주는영화</h4>
+                    </div>
+
+                    <div style="margin-bottom: -100px;">
+                        <p style="font-size: 50px;">&#x1F62D;</p> 
+                        <p style="font-size: 20px; position: relative; top: -110px; left: 70px;">&#x2B50; 9</p>
+                        <p style="font-size: 15px; position: relative; top: -130px; left: 76px; color: #868e96;">싱노타키온(over**)</p>
+                        <h4 style="position: relative; top: -120px">10점이 절대 아깝지 않은 영화. 달달한 로맨스도 좋지만 가슴 먹먹한 부자의 애정도 매우 인상깊었습니다. 간만에 눈물 빼고 영화봤네요..</h4>
+                    </div>
+
+                    <div style="margin-bottom: -100px;">
+                        <p style="font-size: 50px;">&#x1F60C;</p> 
+                        <p style="font-size: 20px; position: relative; top: -110px; left: 70px;">&#x2B50; 9</p>
+                        <p style="font-size: 15px; position: relative; top: -130px; left: 76px; color: #868e96;">소프트아이스크림(1004**)</p>
+                        <h4 style="position: relative; top: -120px">그저 사랑타령하는 로맨스코미디가 아니라 마지막엔 가족이 보였다. 그리고 두번사는것처럼 순간에 최선을 다하게 됬다.또 집에와서 부모님을 안아드렸다.</h4>
+                    </div>
+
+                    <div style="margin-bottom: -100px;">
+                        <p style="font-size: 50px;">&#x1F60C;</p> 
+                        <p style="font-size: 20px; position: relative; top: -110px; left: 70px;">&#x2B50; 9</p>
+                        <p style="font-size: 15px; position: relative; top: -130px; left: 76px; color: #868e96;">쫀쫀이(cms8**)</p>
+                        <h4 style="position: relative; top: -120px">주어진 시간.. 일상의 소중함을 다시 생각합니다..그럼에도 되돌리고 싶은 과거 몇장면은 자꾸 떠오르네요..</h4>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
